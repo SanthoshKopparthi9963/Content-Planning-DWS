@@ -13,8 +13,8 @@ RUN npm ci
 COPY --from=build /app/dist ./dist
 COPY server.ts ./
 COPY tsconfig.json ./
+RUN mkdir -p /app/data
 
-VOLUME ["/app/data"]
 ENV DATABASE_URL=/app/data/database.sqlite
 ENV PORT=3001
 EXPOSE 3001
