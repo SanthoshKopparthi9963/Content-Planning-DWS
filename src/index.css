@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  @apply font-sans antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full hover:bg-slate-400 transition-colors;
+}
+
+.bg-slate-950 { background-color: #ffffff !important; }
+.bg-slate-900 { background-color: #ffffff !important; }
+.bg-slate-900\/50 { background-color: rgba(255,255,255,0.7) !important; }
+.bg-slate-950\/90 { background-color: rgba(0,0,0,0.4) !important; }
+.bg-slate-950\/60 { background-color: rgba(0,0,0,0.4) !important; }
+.bg-slate-950\/50 { background-color: #f8fafc !important; }
+.bg-slate-800 { background-color: #f1f5f9 !important; }
+.bg-slate-800\/50 { background-color: #f1f5f9 !important; }
+.bg-slate-800\/30 { background-color: #f8fafc !important; }
+.bg-slate-800\/20 { background-color: #f8fafc !important; }
+.border-slate-800 { border-color: #e5e7eb !important; }
+.divide-slate-800 > :not([hidden]) ~ :not([hidden]) { border-color: #e5e7eb !important; }
