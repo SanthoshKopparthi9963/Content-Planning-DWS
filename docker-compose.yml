@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - dws-data:/app/data
+
+volumes:
+  dws-data:
